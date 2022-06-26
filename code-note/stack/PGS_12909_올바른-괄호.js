@@ -1,6 +1,6 @@
 /*
 
-올바른 괄호 / 레벨 2
+프로그래머스 / 올바른 괄호 / 레벨 2
 https://programmers.co.kr/learn/courses/30/lessons/12909
 
 < 소요 시간 >

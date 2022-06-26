@@ -1,6 +1,6 @@
 /*
 
-베스트앨범 / 레벨 3
+프로그래머스 / 베스트앨범 / 레벨 3
 https://programmers.co.kr/learn/courses/30/lessons/42579
 
 < 소요 시간 >
