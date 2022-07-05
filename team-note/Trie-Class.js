@@ -38,5 +38,5 @@ console.log(trie.has("cat")); // true
 console.log(trie.has("can")); // true
 console.log(trie.has("cap")); // false
 
-// Reference: [코딩테스트 광탈 방지 A to Z : JavaScript]
+// Reference: 코딩테스트 광탈 방지 A to Z : JavaScript
 // https://school.programmers.co.kr/learn/courses/13213
