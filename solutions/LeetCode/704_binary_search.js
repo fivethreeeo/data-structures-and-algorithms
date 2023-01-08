@@ -17,7 +17,6 @@
           ㄴ mid value값이 target보다 크면 => end를 mid - 1로 변경 (앞쪽에서 찾자)
           ㄴ mid value값이 target보다 작으면 => start를 mid + 1로 변경 (뒷쪽에서 찾자)
           ㄴ 새로운 mid 구하기 
-        
 
 */
 
@@ -28,7 +27,7 @@ var search = function (nums, target) {
   let end = nums.length - 1;
   let mid = getMid(start, end);
 
-  while (start <= mid) {
+  while (start <= end) {
     const value = nums[mid];
 
     if (value === target) {
@@ -38,5 +37,6 @@ var search = function (nums, target) {
     value > target ? (end = mid - 1) : (start = mid + 1);
     mid = getMid(start, end);
   }
+
   return -1;
 };
