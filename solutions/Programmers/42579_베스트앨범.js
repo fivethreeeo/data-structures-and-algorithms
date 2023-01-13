@@ -1,47 +1,47 @@
 /*
 
-프로그래머스 / 베스트앨범 / 레벨 3
+Programmers / 베스트앨범 / Level 3 / 00:32:50
 https://programmers.co.kr/learn/courses/30/lessons/42579
 
-< 소요 시간 >
-2시간
 
-< 프로그래밍 계획 >
+## Pseudo Code ##
 
-- 1차 시도
-
-  1. 노래 정보를 담은 배열을 생성 [... ,[장르, 재생수, 고유번호], ...]
+  1. 장르배열을 돌면서 맵에 추가
+    ㄴ 장르 : {
+              전체재생 수 : number,
+              노래 : {
+                고유번호 : number,
+                재생 수 : number,
+              }
+            }
+            
   2. Map으로 장르를 키로 묶어서 총 재생수, 노래모음 배열을 value로 넣음
   3. 장르별로 최다 재생 수로 정렬 후 2개까지 자름
   4. 장르별로 2개까지 얻은 노래를 1차원 배열로 고유번호로 리턴
 
 */
 
-// 1차 시도
 function solution(genres, plays) {
-  const genresMap = new Map();
+  const songMap = new Map();
 
-  genres
-    .map((genre, index) => [genre, plays[index], index])
-    .forEach(([genre, play, id]) => {
-      const genreData = genresMap.get(genre) || { total: 0, songs: [] };
-      const newGenreData = {
-        total: genreData.total + play,
-        songs: [...genreData.songs, [play, id]],
-      };
-      genresMap.set(genre, newGenreData);
-    });
+  genres.forEach((genre, index) => {
+    const play = plays[index];
+    const currentGenreData = songMap.get(genre) || { total: 0, songs: [] };
+    const updatedGenreData = {
+      total: currentGenreData.total + play,
+      songs: [...currentGenreData.songs, { index, play }],
+    };
+    songMap.set(genre, updatedGenreData);
+  });
 
-  const result = [...genresMap.entries()]
-    .sort((a, b) => b[1].total - a[1].total)
-    .map((genreData) =>
-      genreData[1].songs
-        .sort((a, b) => b[0] - a[0])
-        .slice(0, 2)
-        .map((song) => song[1])
+  return [...songMap.values()]
+    .sort((a, b) => b.total - a.total) // 많이 재생된 장르 정렬
+    .map(
+      ({ _, songs }) =>
+        songs
+          .sort((a, b) => b.play - a.play) // 많이 재생된 노래 정렬
+          .slice(0, 2) // 최대 2곡까지 자르기
+          .map(({ index }) => index) // 고유번호로 변경
     )
-    .flat();
-
-  console.log(result);
-  return result;
+    .flat(); // 2차원 배열 => 1차원 배열
 }
