@@ -21,5 +21,6 @@ function solution(d, budget) {
     budget -= d[i];
     count++;
   }
+
   return count;
 }
