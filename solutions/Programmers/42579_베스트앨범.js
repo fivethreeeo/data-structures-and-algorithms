@@ -7,6 +7,7 @@ https://programmers.co.kr/learn/courses/30/lessons/42579
 ## Pseudo Code ##
 
   1. 장르배열을 돌면서 맵에 추가
+    ㄴ 데이터 인터페이스
     ㄴ 장르 : {
               전체재생 수 : number,
               노래 : {
