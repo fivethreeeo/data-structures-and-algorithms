@@ -23,19 +23,19 @@ https://programmers.co.kr/learn/courses/30/lessons/42579
 */
 
 function solution(genres, plays) {
-  const songMap = new Map();
+  const map = new Map();
 
   genres.forEach((genre, index) => {
     const play = plays[index];
-    const currentGenreData = songMap.get(genre) || { total: 0, songs: [] };
+    const currentGenreData = map.get(genre) || { total: 0, songs: [] };
     const updatedGenreData = {
       total: currentGenreData.total + play,
       songs: [...currentGenreData.songs, { index, play }],
     };
-    songMap.set(genre, updatedGenreData);
+    map.set(genre, updatedGenreData);
   });
 
-  return [...songMap.values()]
+  return [...map.values()]
     .sort((a, b) => b.total - a.total) // 많이 재생된 장르 정렬
     .map(
       ({ _, songs }) =>

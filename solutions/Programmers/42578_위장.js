@@ -14,16 +14,29 @@
       ㄴ 개수+1 => 안입는 것도 하나의 경우
       ㄴ 
     3. ㄴ 있으면 찾은 값의 인덱스와 i를 리턴한다.
-    4. ㄴ 없으면 hash에 {nums[i]: i} 추가한다.
+    4. ㄴ 없으면 map에 {nums[i]: i} 추가한다.
 
 */
 
+// 1. 객체 사용
 function solution(clothes) {
-  const clothesMap = {};
+  const map = {};
 
   for (const [_, kind] of clothes) {
-    clothesMap[kind] ? clothesMap[kind]++ : (clothesMap[kind] = 1);
+    map[kind] ? map[kind]++ : (map[kind] = 1);
   }
 
-  return Object.values(clothesMap).reduce((a, c) => a * (c + 1), 1) - 1;
+  return Object.values(map).reduce((a, c) => a * (c + 1), 1) - 1;
+}
+
+// 2. Map 사용
+function solution(clothes) {
+  const map = new Map();
+
+  for (const [_, kind] of clothes) {
+    if (!map.get(kind)) map.set(kind, 0);
+    map.set(kind, map.get(kind) + 1);
+  }
+
+  return [...map.values()].reduce((a, c) => a * (c + 1), 1) - 1;
 }
