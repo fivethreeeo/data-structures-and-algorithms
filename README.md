@@ -1,6 +1,6 @@
 |  Platform   | Solved |                                         Solutions                                         |
 | :---------: | :----: | :---------------------------------------------------------------------------------------: |
-|  LeetCode   |   9    |  [Link](https://github.com/sangbeomheo/PracticeCodingTest/tree/main/solutions/LeetCode)   |
+|  LeetCode   |   11   |  [Link](https://github.com/sangbeomheo/PracticeCodingTest/tree/main/solutions/LeetCode)   |
 | Programmers |  184   | [Link](https://github.com/sangbeomheo/PracticeCodingTest/tree/main/solutions/Programmers) |
 
 <br>
