@@ -14,7 +14,6 @@ function solution(returnUnit, receivedUnit, initialBottleCount) {
 
   while (restBottleCount >= returnUnit) {
     const share = parseInt(restBottleCount / returnUnit);
-    const returnCount = share * returnUnit;
     const receivedCount = share * receivedUnit;
 
     restBottleCount = (restBottleCount % returnUnit) + receivedCount;
