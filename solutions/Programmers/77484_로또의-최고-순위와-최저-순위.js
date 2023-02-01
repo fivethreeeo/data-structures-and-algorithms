@@ -8,36 +8,12 @@ https://school.programmers.co.kr/learn/courses/30/lessons/77484
 
 */
 
+const rank = { 6: 1, 5: 2, 4: 3, 3: 4, 2: 5, 1: 6, 0: 6 };
+
 function solution(lottos, win_nums) {
-  const zeroCount = lottos.filter((num) => num === 0).length;
-  const minCount = lottos.filter((num) => win_nums.includes(num)).length;
+  const zeroCount = lottos.filter(num => num === 0).length;
+  const minCount = lottos.filter(num => win_nums.includes(num)).length;
   const maxCount = zeroCount + minCount;
 
-  const maxRank = getRank(maxCount);
-  const minRank = getRank(minCount);
-  return [maxRank, minRank];
-}
-
-function getRank(count) {
-  let rank;
-  switch (count) {
-    case 6:
-      rank = 1;
-      break;
-    case 5:
-      rank = 2;
-      break;
-    case 4:
-      rank = 3;
-      break;
-    case 3:
-      rank = 4;
-      break;
-    case 2:
-      rank = 5;
-      break;
-    default:
-      rank = 6;
-  }
-  return rank;
+  return [rank[maxCount], rank[minCount]];
 }
