@@ -19,17 +19,17 @@ https://school.programmers.co.kr/learn/courses/30/lessons/42888
 function solution(records) {
   const user = {};
   const result = [];
-  const actionKR = { Enter: "들어왔습니다.", Leave: "나갔습니다." };
+  const actionKR = { Enter: '들어왔습니다.', Leave: '나갔습니다.' };
 
   for (const record of records) {
-    const [action, id, nickname] = record.split(" ");
-    if (action === "Leave") continue;
+    const [action, id, nickname] = record.split(' ');
+    if (action === 'Leave') continue;
     user[id] = nickname;
   }
 
   for (const record of records) {
-    const [action, id, nickname] = record.split(" ");
-    if (action === "Change") continue;
+    const [action, id, nickname] = record.split(' ');
+    if (action === 'Change') continue;
 
     result.push(`${user[id]}님이 ${actionKR[action]}`);
   }
