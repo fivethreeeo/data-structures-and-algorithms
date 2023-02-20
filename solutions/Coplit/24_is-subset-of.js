@@ -34,6 +34,6 @@ const isSubsetOf = function (base, sample, set = new Set()) {
 };
 
 // 코드 개선
-// const isSubsetOf = function (base, sample, set = new Set(base)) {
-//   return sample.every(v => set.has(v));
-// };
+const isSubsetOf2 = function (base, sample, set = new Set(base)) {
+  return sample.every(v => set.has(v));
+};
