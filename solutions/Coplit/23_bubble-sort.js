@@ -27,9 +27,9 @@
 */
 
 const bubbleSort = function (arr) {
-  while (true) {
-    let isChanged = false;
-
+  let isChanged = true;
+  while (isChanged) {
+    isChanged = false;
     arr.forEach((el, idx) => {
       const nextIdx = idx + 1;
       console.log(el, arr[nextIdx]);
@@ -38,8 +38,6 @@ const bubbleSort = function (arr) {
         [arr[idx], arr[nextIdx]] = [arr[nextIdx], arr[idx]];
       }
     });
-
-    if (!isChanged) break;
   }
   return arr;
 };
