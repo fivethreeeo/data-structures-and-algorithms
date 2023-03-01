@@ -1,7 +1,17 @@
-|  Platform   | Solved |                                         Solutions                                         |
-| :---------: | :----: | :---------------------------------------------------------------------------------------: |
-|  LeetCode   |   11   |  [Link](https://github.com/sangbeomheo/PracticeCodingTest/tree/main/solutions/LeetCode)   |
-| Programmers |  184   | [Link](https://github.com/sangbeomheo/PracticeCodingTest/tree/main/solutions/Programmers) |
+|      Platform      | Solved |            Solutions            |
+| :----------------: | :----: | :-----------------------------: |
+| Coplit(codestates) |   7    |   [Link](/solutions/Coplit/)    |
+|      LeetCode      |   12   |  [Link](/solutions/LeetCode/)   |
+|    Programmers     |  187   | [Link](/solutions/Programmers/) |
+
+<br>
+
+|   Status   |                             학습 기록                             |
+| :--------: | :---------------------------------------------------------------: |
+| `알고리즘` |       [Binary Search (이진탐색)](/note/Binary%20Search.md)        |
+|     -      | [DFS(깊이우선탐색) & BFS(너비우선탐색)](/note/DFS%20%26%20BFS.md) |
+| `자료구조` |            [JavaScript Map](/note/JavaScript%20Map.md)            |
+|     -      |            [JavaScript Set](/note/JavaScript%20Set.md)            |
 
 <br>
 
