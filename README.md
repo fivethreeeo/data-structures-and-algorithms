@@ -2,7 +2,7 @@
 | :----------------: | :----: | :-----------------------------: |
 |    Programmers     |  188   | [Link](/solutions/Programmers/) |
 |      LeetCode      |   15   |  [Link](/solutions/LeetCode/)   |
-| Coplit(codestates) |   8    |   [Link](/solutions/Coplit/)    |
+| Coplit(codestates) |   10    |   [Link](/solutions/Coplit/)    |
 
 <br>
 
