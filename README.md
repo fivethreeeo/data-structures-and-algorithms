@@ -1,8 +1,15 @@
 |      Platform      | Solved |            Solutions            |
 | :----------------: | :----: | :-----------------------------: |
 |    Programmers     |  188   | [Link](/solutions/Programmers/) |
-|      LeetCode      |   15   |  [Link](/solutions/LeetCode/)   |
-| Coplit(codestates) |   10    |   [Link](/solutions/Coplit/)    |
+|      LeetCode      |   16   |  [Link](/solutions/LeetCode/)   |
+| Coplit(codestates) |   9    |   [Link](/solutions/Coplit/)    |
+
+<br>
+
+- 문제풀이 시간 기록하기
+- code를 작성하기 전에 추상적으로 풀이 작성하기
+  - (수도코드, 어떤 자료구조 & 알고리즘으로 풀지)
+- 작성한 code의 시간복잡도 공간복잡도 확인하기
 
 <br>
 
