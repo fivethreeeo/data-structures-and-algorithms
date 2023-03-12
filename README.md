@@ -1,7 +1,7 @@
 |      Platform      | Solved |            Solutions            |
 | :----------------: | :----: | :-----------------------------: |
 |    Programmers     |  188   | [Link](/solutions/Programmers/) |
-|      LeetCode      |   16   |  [Link](/solutions/LeetCode/)   |
+|      LeetCode      |   17   |  [Link](/solutions/LeetCode/)   |
 | Coplit(codestates) |   9    |   [Link](/solutions/Coplit/)    |
 
 <br>
