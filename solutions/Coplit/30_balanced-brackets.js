@@ -41,9 +41,7 @@ const balancedBrackets = function (str) {
   for (const bracket of str) {
     if (open.has(bracket)) {
       stack.push(bracket)
-      continue
-    }
-    if (!isPair(stack.pop(), bracket)) {
+    } else if (!isPair(stack.pop(), bracket)) {
       return false
     }
   }
