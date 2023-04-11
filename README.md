@@ -27,5 +27,5 @@
 
 |    Status     |                                                    Activities                                                    |
 | :-----------: | :--------------------------------------------------------------------------------------------------------------: |
-| `In Progress` |                   [`2023.1 t0 2023.4` 알고리즘 스터디](https://github.com/nincoding/algorithm-study)                    |
+| `Done` |                   [`2023.1 t0 2023.4` 알고리즘 스터디](https://github.com/nincoding/algorithm-study)                    |
 |    `Done`     | [ `2022.6 to 2023.3` Challenge 100 Coding Test Study](https://github.com/ellynhan/challenge100-codingtest-study) |
